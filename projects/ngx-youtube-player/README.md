@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/Hernior/ngx-youtube-player.svg?branch=master)](https://travis-ci.org/Hernior/ngx-youtube-player)
-[![npm version](https://badge.fury.io/js/ngx-youtube-player.svg)](https://badge.fury.io/js/ngx-youtube-player)
-[![npm downloads a month](https://img.shields.io/npm/dm/ngx-youtube-player.svg)](https://img.shields.io/npm/dm/ngx-youtube-player.svg)
-[![npm downloads a week](https://img.shields.io/npm/dt/ngx-youtube-player.svg)](https://img.shields.io/npm/dt/ngx-youtube-player.svg)
+[![npm version](https://badge.fury.io/js/@hercilio%2Fngx-youtube-player.svg)](https://badge.fury.io/js/@hercilio%2Fngx-youtube-player)
+[![npm downloads a month](https://img.shields.io/npm/dm/@hercilio/ngx-youtube-player.svg)](https://img.shields.io/npm/dm/@hercilio/ngx-youtube-player.svg)
+[![npm downloads a week](https://img.shields.io/npm/dt/@hercilio/ngx-youtube-player.svg)](https://img.shields.io/npm/dt/@hercilio/ngx-youtube-player.svg)
 
 # Angular Youtube Player Component
 
