@@ -3,44 +3,26 @@
 [![npm downloads a month](https://img.shields.io/npm/dm/ngx-youtube-player.svg)](https://img.shields.io/npm/dm/ngx-youtube-player.svg)
 [![npm downloads a week](https://img.shields.io/npm/dt/ngx-youtube-player.svg)](https://img.shields.io/npm/dt/ngx-youtube-player.svg)
 
-# Install
-
-`npm i ngx-youtube-player`
-
 # Angular Youtube Player Component
 
 This is an Angular component based on [youtube player iframe api](https://developers.google.com/youtube/iframe_api_reference).
 This component came out as a result of the [open source project Echoes Player](http://github.com/orizens/echoes-player) - an alternative player for watching and listening to media from youtube.
+Original project: https://github.com/orizens/ngx-youtube-player
 
-## Breaking Change with v7
-
-| Before < v7           | After >= v7                        |
-| --------------------- | ---------------------------------- |
-| `YoutubePlayerModule` | `NgxYoutubePlayerModule`           |
-| `YoutubePlayerModule` | `NgxYoutubePlayerModule.forRoot()` |
+## 
 
 ## Angular Support
 
-**Starting with version 6**, versions follow Angular's version to easily reflect compatibility.
-
-Meaning, for Angular 11, use ngx-youtube-player @ ^11.0.0
+**Compatible with Angular v14**, versions follow Angular's version to easily reflect compatibility.
+Starting with Angular v14.2.5.
 
 ## LICENSE
 
-Angular Youtube Component includes 2 optional licenses:
-
-1.  **Free** - for open source projects - includes standard play features, released under **MIT** license.
-2.  **Commercial (Enterprize)** - **you must purchase a license**, includes the following features:
-
-- License types:
-  - app developer (\$200) - a license for each developer working with this component for one product only
-  - platform developer (\$550) - a license for each developer developer working with component for all products in one company
-
-To purchase a license, please contact at https://orizens.com/contact
+This fork project is free to use, released under **MIT** license.
 
 ## Installation
 
-`npm install ngx-youtube-player`
+`npm install @hercilio/ngx-youtube-player`
 
 ## Supported API
 
@@ -66,20 +48,16 @@ Currently supported attributes:
 First, import the YoutubePlayerModule to your module:
 
 ```typescript
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { YoutubePlayerModule } from "ngx-youtube-player";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-import { AppComponent } from "./app";
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+
+...
 
 @NgModule({
-  imports: [BrowserModule, YoutubePlayerModule.forRoot()],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  ...
+  imports: [..., NgxYoutubePlayerModule.forRoot()],
+  ...
 })
 export class AppModule {}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
 Next, use the **youtube-player** component. A Unique Id will be created for this player's instance:
@@ -99,7 +77,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   player: YT.Player;
-  private id: string = "qDuKsiwS5xw";
+  private id: string = "L-odCf4MfJc";
 
   savePlayer(player) {
     this.player = player;
