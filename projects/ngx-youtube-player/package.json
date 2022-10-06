@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Hernior/ngx-youtube-player/issues"
   },
-  "homepage": "https://github.com/Hernior/ngx-youtube-player"
+  "homepage": "https://github.com/Hernior/ngx-youtube-player",
+  "keywords": [
+    "angular",
+    "angular-14",
+    "youtube",
+    "video",
+    "player"
+  ]
 }
