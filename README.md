@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/orizens/ngx-youtube-player.svg?branch=master)](https://travis-ci.org/orizens/ngx-youtube-player)
+[![Build Status](https://travis-ci.org/Hernior/ngx-youtube-player.svg?branch=master)](https://travis-ci.org/Hernior/ngx-youtube-player)
 [![npm version](https://badge.fury.io/js/ngx-youtube-player.svg)](https://badge.fury.io/js/ngx-youtube-player)
 [![npm downloads a month](https://img.shields.io/npm/dm/ngx-youtube-player.svg)](https://img.shields.io/npm/dm/ngx-youtube-player.svg)
 [![npm downloads a week](https://img.shields.io/npm/dt/ngx-youtube-player.svg)](https://img.shields.io/npm/dt/ngx-youtube-player.svg)
@@ -6,8 +6,8 @@
 # Angular Youtube Player Component
 
 This is an Angular component based on [youtube player iframe api](https://developers.google.com/youtube/iframe_api_reference).
-This component came out as a result of the [open source project Echoes Player](http://github.com/orizens/echoes-player) - an alternative player for watching and listening to media from youtube.
-Original project: https://github.com/orizens/ngx-youtube-player
+This component came out as a result of the [open source project Echoes Player](http://github.com/Hernior/echoes-player) - an alternative player for watching and listening to media from youtube.
+Original project: https://github.com/Hernior/ngx-youtube-player
 
 ## 
 
@@ -96,6 +96,12 @@ This will: compile ts files, watch for changes and start the test task. Whenever
 
 Travis-ci is integrated
 
+## Building & Publish
+
+- npm run build:lib
+- cd dist/ngx-youtube-player
+- npm publish --access public
+
 # Showcase Examples
 
-- [Echoes Player](http://orizens.github.io/echoes-player) ([github repo for echoes player](http://github.com/orizens/echoes-player))
+- [Echoes Player](http://orizens.github.io/echoes-player) ([github repo for echoes player](http://github.com/Hernior/echoes-player))
