@@ -1,10 +1,10 @@
 {
-  "name": "ngx-youtube-player",
-  "version": "12.0.1",
-  "author": "Oren Farhi (orizens.com)",
+  "name": "@hercilio/ngx-youtube-player",
+  "version": "14.2.5",
+  "author": "Hercilio Alencar",
   "peerDependencies": {
-    "@angular/common": "^8.2.0",
-    "@angular/core": "^8.2.0"
+    "@angular/common": "^14.2.5",
+    "@angular/core": "^14.2.5"
   },
   "dependencies": {
     "@types/youtube": "0.0.46",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/orizens/ngx-youtube-player.git"
+    "url": "https://github.com/Hernior/ngx-youtube-player.git"
   },
   "bugs": {
-    "url": "https://github.com/orizens/ngx-youtube-player/issues"
+    "url": "https://github.com/Hernior/ngx-youtube-player/issues"
   },
-  "homepage": "https://github.com/orizens/ngx-youtube-player"
+  "homepage": "https://github.com/Hernior/ngx-youtube-player"
 }
