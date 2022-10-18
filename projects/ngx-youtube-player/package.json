@@ -1,13 +1,13 @@
 {
   "name": "@hercilio/ngx-youtube-player",
-  "version": "14.2.5",
+  "version": "14.2.6",
   "author": "Hercilio Alencar",
   "peerDependencies": {
-    "@angular/common": "^14.2.5",
-    "@angular/core": "^14.2.5"
+    "@angular/common": "^14.2.6",
+    "@angular/core": "^14.2.6"
   },
   "dependencies": {
-    "@types/youtube": "0.0.46",
+    "@types/youtube": "0.0.47",
     "tslib": "^2.0.0"
   },
   "repository": {

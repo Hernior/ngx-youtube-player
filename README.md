@@ -6,15 +6,11 @@
 # Angular Youtube Player Component
 
 This is an Angular component based on [youtube player iframe api](https://developers.google.com/youtube/iframe_api_reference).
-This component came out as a result of the [open source project Echoes Player](http://github.com/Hernior/echoes-player) - an alternative player for watching and listening to media from youtube.
-Original project: https://github.com/Hernior/ngx-youtube-player
-
-## 
 
 ## Angular Support
 
 **Compatible with Angular v14**, versions follow Angular's version to easily reflect compatibility.
-Starting with Angular v14.2.5.
+Starting with Angular v14.2.6.
 
 ## LICENSE
 
@@ -30,18 +26,77 @@ Currently supported attributes:
 
 ### Inputs
 
-- **height** (number) - optional height for the player
-- **width** (number) - optional width for the player
-- **videoId** (string) - will load the specified video by id
+- **height** (number) – The width of the video player. The default value is 640.
+- **width** (number) – The height of the video player. The default value is 390.
+- **videoId** (string) – The YouTube video ID that identifies the video that the player will load.
+- **playerVars** (object) – The object's properties identify player parameters that can be used to customize the player.
+- **events** (object) – The object's properties identify the events that the API fires and the functions (event listeners) that the API will call when those events occur. In the example, the constructor indicates that the `onPlayerReady` function will execute when the `onReady` event fires and that the `onPlayerStateChange` function will execute when the `onStateChange` event fires.
 
 ### outputs
 
-- **ready** (YT.Player) - implements youtube's player onReady event -> sends a the new created yt player instance
-- **change** - a state change event channeling the youtube's player instance state event object
+- **ready** (YT.Player) – Implements youtube's player `onReady` event -> sends a the new created yt player instance
+- **change** – A state change event channeling the youtube's player instance state event object
 
-## DEMO
+## Player object and functions
 
-[A Live Demo In StackBlitz](https://stackblitz.com/edit/ngx-youtube-player?file=src%2Fapp%2Fapp.module.ts)
+[YouTube Player API Reference](https://developers.google.com/youtube/iframe_api_reference)
+ - videoTitle
+ - playerInfo
+ - addCueRange()
+ - clearVideo()
+ - cuePlaylist()
+ - cueVideoById()
+ - cueVideoByUrl()
+ - getApiInterface()
+ - getAvailablePlaybackRates()
+ - getAvailableQualityLevels()
+ - getCurrentTime()
+ - getDebugText()
+ - getDuration()
+ - getMediaReferenceTime()
+ - getPlaybackQuality()
+ - getPlaybackRate()
+ - getPlayerMode()
+ - getPlayerState()
+ - getPlaylist()
+ - getPlaylistId()
+ - getPlaylistIndex()
+ - getSize()
+ - getSphericalProperties()
+ - getVideoBytesLoaded()
+ - getVideoBytesTotal()
+ - getVideoData()
+ - getVideoLoadedFraction()
+ - getVideoStartBytes()
+ - getVideoUrl()
+ - getVolume()
+ - hideVideoInfo()
+ - isMuted()
+ - isVideoInfoVisible()
+ - loadModule()
+ - loadPlaylist()
+ - loadVideoById()
+ - loadVideoByUrl()
+ - logImaAdEvent()
+ - mute()
+ - nextVideo()
+ - pauseVideo()
+ - playVideo()
+ - playVideoAt()
+ - removeCueRange()
+ - removeEventListener()
+ - seekTo()
+ - setLoop()
+ - setOption()
+ - setPlaybackQuality()
+ - setPlaybackRate()
+ - setShuffle()
+ - setSphericalProperties()
+ - setVolume()
+ - showVideoInfo()
+ - stopVideo()
+ - unMute()
+ - unloadModule()
 
 ## Usage
 
@@ -69,21 +124,25 @@ import { Component } from "@angular/core";
   selector: "app",
   template: `
     <youtube-player
+      width="100%"
+      height="400"
       [videoId]="id"
-      (ready)="savePlayer($event)"
-      (change)="onStateChange($event)"
-    ></youtube-player>
+      [playerVars]="{ modestbranding: 1, controls: 1, disablekb: 1, rel: 0, showinfo: 0 }"
+      (ready)="playerReady($event)"
+      (change)="onVideoChange($event)">
+    </youtube-player>
   `,
 })
 export class AppComponent {
   player: YT.Player;
   private id: string = "L-odCf4MfJc";
 
-  savePlayer(player) {
+  playerReady(player) {
     this.player = player;
     console.log("player instance", player);
   }
-  onStateChange(event) {
+
+  onVideoChange(event) {
     console.log("player state", event.data);
   }
 }
@@ -104,4 +163,5 @@ Travis-ci is integrated
 
 # Showcase Examples
 
-- [Echoes Player](http://orizens.github.io/echoes-player) ([github repo for echoes player](http://github.com/Hernior/echoes-player))
+- [Soon example...]()
+- [Soon example repository...]()
