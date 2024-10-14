@@ -1,10 +1,10 @@
 {
   "name": "@hercilio/ngx-youtube-player",
-  "version": "14.2.5",
+  "version": "15.2.10",
   "author": "Hercilio Alencar",
   "peerDependencies": {
-    "@angular/common": "^14.2.5",
-    "@angular/core": "^14.2.5"
+    "@angular/common": "^15.2.10",
+    "@angular/core": "^15.2.10"
   },
   "dependencies": {
     "@types/youtube": "0.0.46",
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Hernior/ngx-youtube-player",
   "keywords": [
     "angular",
-    "angular-14",
+    "angular-15",
     "youtube",
     "video",
     "player"

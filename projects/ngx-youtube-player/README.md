@@ -11,8 +11,8 @@ Original project: https://github.com/Hernior/ngx-youtube-player
 
 ## Angular Support
 
-**Compatible with Angular v14**, versions follow Angular's version to easily reflect compatibility.
-Starting with Angular v14.2.5.
+**Compatible with Angular v15**, versions follow Angular's version to easily reflect compatibility.
+Starting with Angular v15.2.10.
 
 ## LICENSE
 

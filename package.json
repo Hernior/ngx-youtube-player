@@ -1,6 +1,6 @@
 {
   "name": "@hercilio/ngx-youtube-player",
-  "version": "14.2.5",
+  "version": "15.2.10",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -68,7 +68,7 @@
   "main": "index.js",
   "keywords": [
     "angular",
-    "angular-14",
+    "angular-15",
     "youtube",
     "video",
     "player"
