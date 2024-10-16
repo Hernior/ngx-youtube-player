@@ -1,10 +1,10 @@
 {
   "name": "@hercilio/ngx-youtube-player",
-  "version": "16.2.12",
+  "version": "17.3.12",
   "author": "Hercilio Alencar",
   "peerDependencies": {
-    "@angular/common": "^16.2.12",
-    "@angular/core": "^16.2.12"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "@types/youtube": "0.0.46",
@@ -23,6 +23,7 @@
     "angular-14",
     "angular-15",
     "angular-16",
+    "angular-17",
     "youtube",
     "video",
     "player"
